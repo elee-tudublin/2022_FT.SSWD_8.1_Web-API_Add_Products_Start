@@ -240,7 +240,7 @@ async function createProduct(product) {
 
 ## 2. Testing the API
 
-This is a bit difficult to do in a web browser as headers would need to be modified in developer tools. Instead of that we will use an API testing tool. There are a number of standalone applications which could be used, such as Postman and Insomnia but we will be using a VS Code Extension called [Thunder Client](https://rangav.medium.com/thunder-client-alternative-to-postman-68ee0c9486d6). To install it, click the extensions button in VS Code and search:
+This is a bit difficult to do in a web browser as headers would need to be modified in developer tools. Instead of that we will use an API testing tool. There are a number of standalone applications which could be used, such as [Postman](https://www.postman.com/) and [Insomnia](https://insomnia.rest/) but we will be using a VS Code Extension called [Thunder Client](https://rangav.medium.com/thunder-client-alternative-to-postman-68ee0c9486d6). To install it, click the extensions button in VS Code and search:
 
 ![VS Code Extensions](./media/thunderclient_extension.png)
 
