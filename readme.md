@@ -41,10 +41,10 @@ router.post('/', async(req, res) => {
   // If data missing return 400
   if (typeof new_product === "undefined") {
     res.statusMessage = "Bad Request - missing product data";
-    res.status(400).json({ content: "error" });
+    res.status(400).json({ content: "Bad Request - missing product data" });
   }
   // log the data to the console
-  console.log(`product data sent:\n ${newProduct}`);
+  console.log(`product data sent:\n ${JSON.stringify(new_product)}`);
 
   // Call productService to create the new product
   try {

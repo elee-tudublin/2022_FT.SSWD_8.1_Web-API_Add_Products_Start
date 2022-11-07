@@ -50,7 +50,7 @@ router.get("/bycat/:catId", async (req, res) => {
     // If params are missing return 400
     if (typeof cat_id === "undefined") {
       res.statusMessage = "Bad Request - missing cat id";
-      res.status(400).json({ content: "error" });
+      res.status(400).json({ content: "Bad Request - missing cat id"});
     }
     // Get products 
     try {
