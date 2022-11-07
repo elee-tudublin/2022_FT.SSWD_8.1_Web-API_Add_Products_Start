@@ -36,7 +36,7 @@ We need a new endpoint in the **`product controller`** to accept **`POST`** requ
 router.post('/', async(req, res) => {
 
   // read data request body, this will be the new product
-  const newProduct = req.body;
+  const new_product = req.body;
   
   // If data missing return 400
   if (typeof new_product === "undefined") {
