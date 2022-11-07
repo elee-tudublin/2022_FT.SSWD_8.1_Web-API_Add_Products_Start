@@ -39,16 +39,16 @@ router.post('/', async(req, res) => {
   const newProduct = req.body;
   
   // If data missing return 400
-  if (typeof newProduct === "undefined") {
+  if (typeof new_product === "undefined") {
     res.statusMessage = "Bad Request - missing product data";
     res.status(400).json({ content: "error" });
   }
   // log the data to the console
-  console.log(`product data sent:\n ${newProduct}`);
+  console.log(`product data sent:\n ${new_product}`);
 
   // Call productService to create the new product
   try {
-    const result = await productService.addNewProduct(newProduct);
+    const result = await productService.addNewProduct(new_product);
 
     // Send response back to client
     res.json(result);
@@ -80,7 +80,7 @@ async function addNewProduct(product_data) {
     let validated_product = productValidator.validateNewProduct(product_data); 
 
     // If validation returned a product object - save to database
-    if (validated) {
+    if (validated_product) {
       // Insert
       result = await productData.createProduct(validated_product);
 
