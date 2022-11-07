@@ -34,8 +34,8 @@ router.get('/:id', async(req, res) => {
 
     // Handle server errors    
     } catch (err) {
-        res.status(500);
-        res.send(err.message);   
+        console.log('product/:id - ', err.message);
+        res.sendStatus(500);  
     }
 });
 
@@ -61,8 +61,8 @@ router.get("/bycat/:catId", async (req, res) => {
   
       // Catch and send errors
     } catch (err) {
-      res.status(500);
-      res.send(err.message);
+        console.log('product/:id - ', err.message);
+        res.sendStatus(500);  
     }
   });
 
