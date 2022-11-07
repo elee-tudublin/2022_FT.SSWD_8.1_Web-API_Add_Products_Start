@@ -24,11 +24,11 @@ async function getProducts() {
 //
 async function getProductById(id) {
   // validate the id
-  const validatedId = validate.validateId(id);
+  const validated_id = validate.validateId(id);
 
-  if (validatedId) {
+  if (validated_id) {
     // Call the data access function to get product with matching id
-    const product = await productData.getProductById(validatedId);
+    const product = await productData.getProductById(validated_id);
 
     // return the product
     return product;
@@ -42,11 +42,11 @@ async function getProductById(id) {
 async function getProductsByCatId(id) {
 
     // validate the id
-    const validatedId = validate.validateId(id);
-  if (validatedId) {
+    const validated_id = validate.validateId(id);
+  if (validated_id) {
 
     // Call the data access function to get product matching id
-    const products = await productData.getProductsByCatId(validatedId);
+    const products = await productData.getProductsByCatId(validated_id);
 
     // return the products found
     return products;
