@@ -316,7 +316,7 @@ This is very similar to insert/ POST but uses a HTTP PUT request. also sends the
 
 This is very similar to getting a single product but uses the HTTP DELETE method instead of GET. Add the function and test with Insomnia.
 
-**3.**   **Use Insomnia to test the new endpoints.**
+**3.**   **Use Thunder Client to test the new endpoints.**
 
 
 
