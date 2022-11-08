@@ -318,6 +318,8 @@ This is very similar to getting a single product but uses the HTTP DELETE method
 
 **3.**   **Use Thunder Client to test the new endpoints.**
 
+See the **[Prisma CRUD Reference](https://www.prisma.io/docs/concepts/components/prisma-client/crud)** for examples of how to update and delete: **https://www.prisma.io/docs/concepts/components/prisma-client/crud**
+
 
 
 
