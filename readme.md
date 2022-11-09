@@ -296,7 +296,7 @@ If all goes well the request will send and the response will display the data in
 
 #### Verify that the data was inserted.
 
-Make a request to get all products via Insomnia (a browser will also work).
+Make a request to get all products via Thunder Client (a browser will also work).
 
 ![verify new product was added](./media/product_by_id.png)
 
@@ -310,11 +310,11 @@ Add functionality for the following:
 
 **1.**   **Update a Product.**
 
-This is very similar to insert/ POST but uses a HTTP PUT request. also sends the existing Product id (in addition to the data sent for insert) of the product to be updated, in the request body. Add the function and test with Insomnia.
+This is very similar to insert/ POST but uses a HTTP PUT request. also sends the existing Product id (in addition to the data sent for insert) of the product to be updated, in the request body. Add the function and test with Thunder Client.
 
 **2.**  **Deleting a Product.**
 
-This is very similar to getting a single product but uses the HTTP DELETE method instead of GET. Add the function and test with Insomnia.
+This is very similar to getting a single product but uses the HTTP DELETE method instead of GET. Add the function and test with Thunder Client.
 
 **3.**   **Use Thunder Client to test the new endpoints.**
 
