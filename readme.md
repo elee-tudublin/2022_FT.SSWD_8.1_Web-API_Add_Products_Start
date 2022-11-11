@@ -92,7 +92,7 @@ async function addNewProduct(product_data) {
 }
 ```
 
-*Remember to export the new function*
+*Remember to import the new function*
 
 If successful (after validation) it will call the **`createProduct()`** function in `productData.js` to insert it into the database.
 
